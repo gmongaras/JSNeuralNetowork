@@ -91,7 +91,7 @@ class Layer {
 	forward(inputs) {
 		// The inputs must be the same size as n_inputs
 		if (this.n_inputs == inputs.length) {
-			// The forward pass is found from the dot product between the weights and biases
+			// The forward pass is found from the dot product between the weights and inputs
 			// added to the bias for each node.
 			if (this.weights[0].length == undefined) {
 				this.weights = [this.weights]
